@@ -206,7 +206,7 @@ function(installLSLApp target)
 		return()
 	endif()
 
-	cmake_minimum_required(VERSION 3.15) # generator expressions in install(CODE)
+	cmake_minimum_required(VERSION 3.31) # generator expressions in install(CODE)
 	if(WIN32)
 		findQtInstallationTool("windeployqt")
 		install(CODE "
